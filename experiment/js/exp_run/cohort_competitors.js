@@ -175,8 +175,6 @@ function make_slides(f) {
   slides.subj_info = slide({
     name: "subj_info",
     submit: function (e) {
-      q1 = $("#Q1").val();
-      q2 = $("#Q2").val();
       lg = $("#language").val();
       age = $("#participantage").val();
       gender = $("#gender").val();
@@ -185,13 +183,11 @@ function make_slides(f) {
       eyesight_task = $("#eyesight_task").val();
       payfair = $("#pay_fair").val();
       camblock = $("#camblock").val();
-      if (q1 == '' || q2 == '' || lg == '' || age == '' || gender == '' || headphones == '' || eyesight == '-1' || eyesight_task == '-1' || payfair == '-1' || camblock == '-1') {
+      if (lg == '' || age == '' || gender == '' || headphones == '' || eyesight == '-1' || eyesight_task == '-1' || payfair == '-1' || camblock == '-1') {
         $(".err_part2").show();
       } else {
         $(".err_part2").hide();
         exp.subj_data = {
-          Q1: q1,
-          Q2: q2,
           language: lg,
           age: age,
           gender: gender,
