@@ -191,10 +191,10 @@
     <nav id="webgazerNavbar" class="navbar navbar-nav navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button id="start_camera" onclick="_s.start_camera()">Start Camera</button>
-          <button id="start_calibration" onclick="Restart()"> Calibrate</button>
-          <button id='begin_task' onclick="_s.finish_calibration_start_task()"> Begin Task</button>
-          <button id='helpbutton' onclick="helpModalShow()"> Instructions </button>
+          <button id="start_camera" onclick="_s.start_camera()">开启摄像头</button>
+          <button id="start_calibration" onclick="Restart()"> 校准</button>
+          <button id='begin_task' onclick="_s.finish_calibration_start_task()"> 开始实验</button>
+          <button id='helpbutton' onclick="helpModalShow()"> 实验说明 </button>
           <a class id="Accuracy"> </a>
         </div>
       </div>
@@ -224,9 +224,9 @@
             <img src="helpmodalimg.png" class="img-responsive">
           </div>
           <div class="modal-footer">
-            <button id="closeBtn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="_s.start_camera()">Start
-              Camera</button>
+            <button id="closeBtn" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="_s.start_camera()">开启
+              摄像头</button>
           </div>
         </div>
       </div>
